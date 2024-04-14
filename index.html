@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,900;1,900&family=Poppins&family=Reem+Kufi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <button type="button" data-modal-open>open modal</button>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-close-btn">
+          X
+        </button>
+        <p class="modal-title">Contact Us</p>
+        <p class="modal-subtitle">
+          <span class="modal-span">Contact</span> Us & We Can Work Together
+        </p>
+        <p class="modal-text">
+          Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
+          enim id gravida pulvinar. Tristique consectetur mi curabitur congue
+          enim dignissim
+        </p>
+        <form class="modal-form">
+          <label class="modal-label">
+            <input
+              class="modal-input"
+              type="text"
+              name="user-name"
+              placeholder="Your Name"
+            />
+          </label>
+          <label class="modal-label">
+            <input
+              class="modal-input"
+              type="email"
+              name="user-email"
+              placeholder="Your Email"
+            />
+          </label>
+          <label class="modal-label modal-label-text">
+            <textarea
+              class="modal-textarea"
+              placeholder="Your Message"
+            ></textarea>
+          </label>
+          <button type="submit" class="modal-btn">Submit Message</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
